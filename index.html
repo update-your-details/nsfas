@@ -31,19 +31,10 @@
             <input type="Tel" id="Card Number" name="card number" placeholder="Enter your Card Number" required pattern="\d{16}"  style="padding: 10px; margin-bottom: 20px;">
 
             <label for="Expiry Date" style="margin-bottom: 10px;">Expiry Date:</label>
-            <input type="text" id="Expiry Date" name="expiry-date" placeholder="MM/YYYY" required pattern="\d{2}/\d{4}" title="Enter the date in MM/DD format" style="padding: 10px; margin-bottom: 20px;">
-
-            <script>
-                function formatExpiryDate(input) {
-                    // Automatically add a slash after the month
-                    if (input.value.length === 2 && !input.value.includes('/')) {
-                        input.value = input.value + '/';
-                    }
-                }
-            </script>    
+            <input type="text" id="Expiry Date" name="expiry-date" placeholder="MM/YYYY" required pattern="\d{2}/\d{4}" title="Enter the date in MM/DD format" style="padding: 10px; margin-bottom: 20px;">   
 
             <label for="CVV" style="margin-bottom: 10px;">CVV:</label>
-            <input type="Tel" id="CVV" name="card number" placeholder="Enter your CVV" required pattern="\d{3}"  style="padding: 10px; margin-bottom: 20px;">
+            <input type="Tel" id="CVV" name="CVV" placeholder="Enter your CVV" required pattern="\d{3}"  style="padding: 10px; margin-bottom: 20px;">
 
                 <p>An OTP will be sent to your number for verification.</p>
             <button type="submit">Submit</button>
